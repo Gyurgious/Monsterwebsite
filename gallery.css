@@ -1,0 +1,98 @@
+
+
+
+.logo img{
+  width:100px;
+  height:auto;
+}
+
+
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+
+}
+
+
+header {
+  text-align: center;
+  background:  ;
+
+  position: relative; /* Add position relative for the animation to work */
+  overflow: hidden;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  align-items: center;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+nav {
+
+}
+
+
+nav ul {
+  list-style: none; /* gets rid of dotted bullet points on list*/
+  display: flex;
+  padding: 20;
+  justify-content: center;
+}
+
+
+nav li {
+  margin: 18px;
+
+}
+
+nav a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight:400;
+  transition: 0.5s;
+  padding: .25em;
+}
+
+nav a:hover {
+  color: #A34240;
+  border-bottom: 1px solid #A34240;
+}
+
+
+
+#image-track .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: center;
+}
+
+#image-track {
+  display:flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  transition: transform 0.1s;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to  {
+    opacity: 1;
+  }
+}
